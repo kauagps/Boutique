@@ -1,0 +1,65 @@
+:root {
+    --color-primaira-elegante: #702E2E;
+    --color-fundo-neutro: #FDF6ED;
+    --color-destaques: #FF3C74;
+    --color-promocoes-alertas: #6B8E23;
+    --color-secundaria-vibrante: #1746A2;
+
+    --font-size-titulos: 32px;
+    --font-size-subtitulo-ou-categoria: 24px;
+    --font-size-nome-do-produto: 18px;
+    --font-size-descricao-do-produto: 16px;
+    --font-size-cta-principal: 18px; /*font-weight: 700*/
+    --font-size-cta-secundario: 18px;
+    --font-size-rodape: 14px;
+    --font-size-tags--badges--labels-pequenos: 12px;
+    --font-size-nav: 14px;
+    --font-size-marca: 48px;
+    --font-size-ofertas: 32px;
+
+    --font-family-titulo-subtitulo: 'Bebas Neue', sans-serif;
+    --font-family-primaria: 'Inter', sans-serif;
+    --font-family-preco: 'Playfair Display', serif;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+
+    gap: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container > header {
+    display: grid;
+    grid-area: header;
+    height: 80px;
+    background-color: var(--primaira-elegante);
+
+    grid-template-columns: 1fr 4fr 3fr;
+    align-content: center;
+    gap: 15px;
+
+    .logo {
+        justify-self: center;
+        #logo {
+            height: 75px;
+            width: 105px;
+        }
+
+    }
+    
+    div {
+        border: black 1px solid;
+    }
+}
+.container > main {
+    grid-area: main;
+}
+.container > footer {
+    grid-area: footer;
+}
